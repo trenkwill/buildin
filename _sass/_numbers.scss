@@ -1,0 +1,20 @@
+.numbers {
+	&__counter {
+		font-family: "bebas-neue";
+		line-height: 1;
+		font-weight: $base-font-weight;
+		color: #fff;
+		width: 400px;
+		text-align: center;
+	}
+	&__line {
+		width: 100%;
+		display: block;
+	}
+	&__num-wrap {
+	}
+	&__num {
+	}
+	&__num-text {
+	}
+}

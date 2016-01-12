@@ -1,0 +1,24 @@
+.intro {
+	&__text {
+		margin-bottom: 50px;
+	}
+	&__img-wrap {
+		height: 245px;
+		border: solid 10px #eee;
+		margin-bottom: 20px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-align: center;
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -0.25em; /* Adjusts for spacing */
+		}
+	}
+	&__img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}

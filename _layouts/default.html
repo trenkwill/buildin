@@ -7,13 +7,66 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="homepage">
+      
+      <div class="container">
+        <!-- data-0="transform: rotate(-10deg) skew(-10deg, 0);" data-500="transform: rotate(0deg) skew(0deg, 0);" -->
+        <h2 class="homepage__date  skewed h4"><span>16 &amp; 17 novembre 2016 au Musée du Design de Barcelone</span></h2>    
+        
+        <section class="homepage__section">
+          {% include _intro.html %}
+        </section>
       </div>
+
+      <section class="homepage__section homepage__section--red">
+        <div class="container">
+          {% include _numbers.html %}
+        </div>
+      </section>
+
+      <section class="homepage__section ">
+        <div class="container">
+          {% include _expose.html %}
+        </div>
+      </section>
+      
+      <section class="homepage__section homepage__section--grey">
+        <div class="container">
+        {% include _timeline.html %}
+        </div>
+      </section>
+
+      <section class="homepage__section homepage__section--black">
+        {% include _testimonials.html %}
+      </section>
+      
+      <section class="homepage__section ">
+        <div class="container">
+        {% include _organisateurs.html %}
+        </div>
+      </section>
+
+      <section class="homepage__section homepage__section--grey">
+        <div class="container">
+        {% include _informations.html %}
+        </div>
+      </section>
+
+
+      <section class="homepage__section homepage__section--black">
+        <div class="container">
+        {% include _contact.html %}
+        </div>
+      </section>
     </div>
 
+
+
     {% include footer.html %}
+  
+
+  <script src="scripts/main.min.js">
+  </script>
 
   </body>
 

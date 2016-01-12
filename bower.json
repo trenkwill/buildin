@@ -1,0 +1,28 @@
+{
+  "name": "Buildin",
+  "description": "Un évènement professionnel dédié aux solutions et matériaux innovants pour l’architecture, la construction et l’aménagement intérieur.",
+  "main": "index.html",
+  "authors": [
+    "trenkwill <williamhutter@me.com>"
+  ],
+  "license": "UNLICENSED",
+  "moduleType": [],
+  "homepage": "buildinbarcelona.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "scripts/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "skrollr": "~0.6.30",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "modernizr": "~3.2.0",
+    "counterup": "~1.0.0",
+    "textfit": "textFit#~2.2.2"
+  }
+}

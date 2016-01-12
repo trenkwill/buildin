@@ -1,6 +1,6 @@
 {
   "name": "Buildin",
-  "description": "",
+  "description": "Un évènement professionnel dédié aux solutions et matériaux innovants pour l’architecture, la construction et l’aménagement intérieur.",
   "version": "0.1.0",
   "license": "UNLICENSED",
   "repository": {
@@ -9,6 +9,8 @@
   },
   "devDependencies": {
     "grunt": "~0.4.5",
+    "grunt-bower-concat": "^0.6.0",
+    "grunt-concurrent": "^2.1.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
@@ -16,8 +18,11 @@
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-grunticon": "^2.2.2",
-    "grunt-ng-annotate": "^1.0.1",
+    "grunt-jekyll": "^0.4.3",
+    "grunt-shell": "^1.1.2",
     "grunt-svgmin": "^3.1.0",
-    "grunt-wiredep": "^2.0.0"
+    "grunt-wiredep": "^2.0.0",
+    "load-grunt-tasks": "^3.3.0",
+    "time-grunt": "^1.2.2"
   }
 }
