@@ -65,6 +65,10 @@ module.exports = function(grunt) {
       main: {
         src: 'scripts/main.js',
         dest: 'scripts/main.min.js'
+      },
+      jquery: {
+        src: 'scripts/components/jquery/dist/jquery.js',
+        dest: 'scripts/jquery.min.js'
       }
     },
     watch: {
