@@ -10,7 +10,7 @@ title: Buildin
 email: williamhutter@me.com
 description: "Un évènement professionnel dédié aux solutions et matériaux innovants pour l’architecture, la construction et l’aménagement intérieur."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://buildinbarcelona.com" # the base hostname & protocol for your site
+url: "http://trenkwill.github.io/buildin/" # the base hostname & protocol for your site
 twitter_username: williamhutter
 github_username:  trenkwill
 exclude: ['node_modules', 'package.json', 'Gruntfile.js', 'bower.json', 'css', '_scss']
