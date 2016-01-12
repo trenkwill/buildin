@@ -13,8 +13,7 @@ baseurl: "/buildin" # the subpath of your site, e.g. /blog
 url: "http://trenkwill.github.io/buildin/" # the base hostname & protocol for your site
 twitter_username: williamhutter
 github_username:  trenkwill
-exclude: ['node_modules', 'package.json', 'Gruntfile.js', 'bower.json', 'css', '_scss']
-keep_files: ['_site/css']
+exclude: ['node_modules', 'package.json', 'Gruntfile.js', 'bower.json', '_scss']
 
 # Build settings
 markdown: kramdown
