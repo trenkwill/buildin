@@ -13,8 +13,8 @@
         <!-- data-0="transform: rotate(-10deg) skew(-10deg, 0);" data-500="transform: rotate(0deg) skew(0deg, 0);" -->
         <h2 class="homepage__date  skewed h4"><span>16 &amp; 17 novembre 2016 au Musée du Design de Barcelone</span></h2>    
         
-        <section class="homepage__section">
-          {% include _intro.html %}
+        <section class="homepage__section" id="concept">
+          {% include _concept.html %}
         </section>
       </div>
 
@@ -24,13 +24,13 @@
         </div>
       </section>
 
-      <section class="homepage__section ">
+      <section class="homepage__section" id="visiter">
         <div class="container">
           {% include _expose.html %}
         </div>
       </section>
       
-      <section class="homepage__section homepage__section--grey">
+      <section class="homepage__section homepage__section--grey" id="programe">
         <div class="container">
         {% include _timeline.html %}
         </div>
@@ -40,20 +40,20 @@
         {% include _testimonials.html %}
       </section>
       
-      <section class="homepage__section ">
+      <!-- <section class="homepage__section">
         <div class="container">
         {% include _organisateurs.html %}
         </div>
-      </section>
+      </section> -->
 
-      <section class="homepage__section homepage__section--grey">
+      <section class="homepage__section homepage__section--grey" id="informations-pratiques">
         <div class="container">
         {% include _informations.html %}
         </div>
       </section>
 
 
-      <section class="homepage__section homepage__section--black">
+      <section class="homepage__section homepage__section--black" id="contact">
         <div class="container">
         {% include _contact.html %}
         </div>

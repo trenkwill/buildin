@@ -24,10 +24,13 @@
         z-index: 3;
     }
     &__logo {
-        margin-top: 40px;
+        margin-top: 150px;
         margin-bottom: 40px;
         position: relative;
         z-index: 3;
+        .logo-fill {
+            display: none;
+        }
     }
     &__shadow {
         position: absolute;
