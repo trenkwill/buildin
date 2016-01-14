@@ -7,6 +7,21 @@ module.exports = function(grunt) {
   
     pkg: grunt.file.readJSON('package.json'),
 
+
+    notify: {
+      watch: {
+        options: {
+          title: 'Task Complete',  // optional
+          message: 'SASS and Uglify finished running', //required
+        }
+      },
+      serve: {
+        options: {
+          title: 'Server',  // optional
+          message: 'Up and running', //required
+        }
+      }
+    },
     sass: {
         dist: {
           files: {
@@ -72,16 +87,20 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      options: { livereload: true },
       css: {
         files: '**/*.scss',
-        tasks: ['sass'],
+        tasks: ['sass', 'notify'],
+        options: { livereload: true }
       },
       html: {
-        files: '**/*.html'
+        files: '**/*.html',
+        options: { livereload: true }
       },
       js: {
-        files: '**/main.js'
+        files: '**/main.js',
+        tasks: ['uglify', 'bower_concat'],
+        options: { livereload: true }
+
       },
       configFiles: {
           files: 'Gruntfile.js',
@@ -110,9 +129,8 @@ module.exports = function(grunt) {
     concurrent: {
         serve: [
             'watch',
-            'bower_concat',
-            'uglify',
-            'shell:jekyllServe'
+            'shell:jekyllServe',
+            'notify:serve'
         ],
         options: {
             logConcurrentOutput: true
@@ -143,7 +161,7 @@ module.exports = function(grunt) {
       'shell:jekyllBuild',
       'sass'
   ]);
-  grunt.registerTask('default', ['build']);
+  grunt.registerTask('default', ['serve']);
   grunt.registerTask('icons', ['svgmin', 'grunticon:myIcons']);
 
 };
