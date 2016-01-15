@@ -141,9 +141,18 @@ module.exports = function(grunt) {
         dest: 'scripts/lib.js',
         exclude: [
           'jquery',
-          'modernizr',
-          'bootstrap-sass'
+          'modernizr'
         ]
+      }
+    },
+    imagemin: {
+      images: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['*.{png,jpg,gif}'],
+          dest: 'images/img-optimized/'
+        }]
       }
     }
   });
@@ -159,9 +168,10 @@ module.exports = function(grunt) {
   // Register the grunt build task
   grunt.registerTask('build', [
       'shell:jekyllBuild',
-      'sass'
+      'sass',
+      'svgmin', 
+      'grunticon:myIcons', 
+      'imagemin'
   ]);
   grunt.registerTask('default', ['serve']);
-  grunt.registerTask('icons', ['svgmin', 'grunticon:myIcons']);
-
 };

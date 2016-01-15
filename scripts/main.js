@@ -28,12 +28,12 @@ jQuery(document).ready(function($){
 	}
 
 
-	$('a').click(function(){
-	    $('html, body').animate({
-	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 500);
-	    return false;
-	});
+	// $('a').click(function(){
+	//     $('html, body').animate({
+	//         scrollTop: $( $.attr(this, 'href') ).offset().top
+	//     }, 500);
+	//     return false;
+	// });
 
 	$('.numbers__counter .numbers__num').counterUp({
 	    delay: 10, // the delay time in ms
@@ -58,11 +58,11 @@ jQuery(document).ready(function($){
 	$(window).on('scroll', function () {
 	  var cur_pos = $(this).scrollTop();
 	  
-	  console.log(cur_pos);
+	  // console.log(cur_pos);
 	  if (cur_pos > $("header").height()) {
-		nav.addClass("menu--dark");
+		nav.addClass("menu--white");
 	  } else {
-	  	nav.removeClass("menu--dark");
+	  	nav.removeClass("menu--white");
 	  	nav.find('li').removeClass('menu__item--current');
 	  };
 

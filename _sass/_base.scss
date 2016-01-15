@@ -226,8 +226,17 @@ pre {
         border-color: $red;
     }
 }
-.btn--contact {
-    margin-top: 100px;
+.btn-secondary {
+    border-radius: 0px;
+    color: #fff;
+    border-width: 3px;
+    border-color: #fff;
+    padding: 30px 50px;
+    &:focus, &:hover, &:active, &:visited, &:active:hover {
+        color: $red;
+        background-color: #fff;
+        border-color: #fff;
+    }
 }
 
 /**
@@ -250,6 +259,9 @@ pre {
 .red {
     color: $red;
 }
+.white {
+    color: #fff;
+}
 
 .bold {
     font-family: "bebas-neue";
@@ -260,6 +272,14 @@ pre {
     text-align: center;
 }
 
+label {
+    font-weight: normal;
+    font-family: "bebas_neuelight";
+}
+
+.form-control {
+    height: 50px;
+}
 
 .px-img {
     position: relative;
@@ -298,12 +318,14 @@ pre {
     background: rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(10px) saturate(100%);
    
-    &--dark {
+    &--white {
         background: rgba(255, 255, 255, 0.9);
         border-bottom: solid 1px #000;
-        li a {
-            background: rgba(255, 255, 255, 0);
-            color: #000;
+        a,
+        a:hover,
+        a:visited,
+        a:focus {
+            color: #111;
         }
     }
     
@@ -331,8 +353,9 @@ pre {
     }
 
     &__link:hover,
+    &__link:visited,
     &__link:focus {
-        color: #929292;
+        color: #fff;
     }
 
     &__item--current .menu__link {
@@ -407,4 +430,12 @@ pre {
     }
 }
 
+
+// animation
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 

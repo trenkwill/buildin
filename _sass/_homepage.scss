@@ -22,10 +22,11 @@
         font-weight: 800;
         position: relative;
         z-index: 3;
+        animation: fadeIn 2s 1s;
     }
     &__logo {
         margin-top: 150px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         position: relative;
         z-index: 3;
         .logo-fill {
@@ -40,19 +41,41 @@
         top: 0;
         left: 0;
         z-index: 2;
-        background: rgba(0,0,0,0.6);
+        background: rgba(0,0,0,0.3);
+    }
+    &__date {
+        position: relative;
+        display: inline-block;
+        position: relative;
+        z-index: 9;
+        animation: fadeIn 2s 1s;
+        
+        .date {
+            line-height: 1;
+            display: inline-block;
+            background: $red;
+            color: #ffe;
+            padding: 0.5em;
+            position: relative;
+            text-transform: uppercase;
+        }
+        .place {
+            font-size: 20px;
+        }
     }
 }
 
 .homepage {
     &__section {
         padding: 100px 0;
+        position: relative;
         
         &--grey {
             background: #E2E9F2;
         }
         &--red {
             background: $red;
+            z-index: 2;
         }
         &--black {
             background: #333;
@@ -61,31 +84,16 @@
             }
         }
     }
-    &__date {
-        position: relative;
-        margin-top: -100px;
-        margin-bottom: 50px;
-        left: 50%;
-        margin-left: -300px;
-        display: inline-block;
-        position: relative;
-        z-index: 9;
-        
-        span {
-            background: $red;
-            color: #ffe;
-            padding: 1em;
-            position: relative;
-            text-transform: uppercase;
-        }
-    }
-    &__number {
-        display: block;
-        margin: auto;
-    }
     &__illustration-1 {
         position: relative;
+        z-index:0;
+        margin-top: -100px;
+    }
+    &__illustration-2 {
+        position: absolute;
+        left: -40px;
         z-index: -1;
         margin-top: -100px;
+        opacity: .5;
     }
 }
