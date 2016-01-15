@@ -1,6 +1,11 @@
 .numbers {
+	color: #fff;
+	p {
+		margin-top: 40px;
+		font-size: 30px;
+	} 
 	&__counter {
-		font-family: "bebas-neue";
+		font-family: "bebas_neuelight";
 		line-height: 1;
 		font-weight: $base-font-weight;
 		color: #fff;

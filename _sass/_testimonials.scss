@@ -6,6 +6,8 @@
 	}
 	&__portrait {
 		display: block;
+		border-radius: 4px;
+		border: solid 1px #999;
 		margin: 0 auto 20px;
 	}
 	&__title {
@@ -30,5 +32,31 @@
 		text-align: center;
 		font-style: italic;
 		color: #999;
+	}
+	.carousel-indicators {
+		bottom: 0;
+	}
+	a.left {
+		width: 50px;
+		height: 70px;
+		text-indent: -999999px;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -35px;
+		display: block;
+		background: url("../images/arrow-left.png") no-repeat;
+	}
+
+	a.right {
+		width: 50px;
+		height: 70px;
+		text-indent: -999999px;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -35px;
+		display: block;
+		background: url("../images/arrow-right.png") no-repeat;
 	}
 }

@@ -10,26 +10,27 @@
     <div class="homepage">
       
       <div class="container">
-        <!-- data-0="transform: rotate(-10deg) skew(-10deg, 0);" data-500="transform: rotate(0deg) skew(0deg, 0);" -->
-        <h2 class="homepage__date  skewed h4"><span>16 &amp; 17 novembre 2016 au Musée du Design de Barcelone</span></h2>    
         
         <section class="homepage__section" id="concept">
           {% include _concept.html %}
+          {% include _organisateurs.html %}
         </section>
       </div>
+      
 
-      <section class="homepage__section homepage__section--red">
-        <div class="container">
-          {% include _numbers.html %}
-        </div>
-      </section>
-
-      <section class="homepage__section" id="visiter">
-        <div class="container">
-          {% include _expose.html %}
-        </div>
+     
+      <section class="homepage__section homepage__section--red" data-bottom-top="background:rgba(226,233,242,1);" data-center-center="background:rgba(216,60,79,1);" id="visiter">
+          <div class="container">
+              {% include _visiter.html%}
+          </div>
       </section>
       
+       <section class="homepage__section" id="exposer">
+          <div class="container">
+            {% include _expose.html %}
+          </div>
+      </section>
+
       <section class="homepage__section homepage__section--grey" id="programe">
         <div class="container">
         {% include _timeline.html %}
@@ -40,11 +41,11 @@
         {% include _testimonials.html %}
       </section>
       
-      <!-- <section class="homepage__section">
-        <div class="container">
-        {% include _organisateurs.html %}
-        </div>
-      </section> -->
+      <section class="homepage__section homepage__section--red" data-bottom-top="background:rgba(226,233,242,1);" data-center-center="background:rgba(216,60,79,1);">
+          <div class="container">
+            {% include _numbers.html %}
+          </div>
+      </section>
 
       <section class="homepage__section homepage__section--grey" id="informations-pratiques">
         <div class="container">
@@ -60,13 +61,9 @@
       </section>
     </div>
 
-
-
     {% include footer.html %}
   
-
-  <script src="scripts/main.min.js">
-  </script>
+  <script src="scripts/main.min.js"></script>
 
   </body>
 
